@@ -1,0 +1,13 @@
+nginx:
+    pname: nginx
+    dep:
+        - name: middleware
+          url: http://middleware.host.com/check.htm
+    script: sudo -u admin /home/admin/cai/bin/nginx-proxy -s restart
+web_service:
+    pid_file: /home/admin/web_server/conf/.web_server.pid
+    dep:
+        - name: nginx
+          host: 127.0.0.1
+          port: 80
+    script: sudo -u admin /home/admin/web_server/bin/startup.sh
