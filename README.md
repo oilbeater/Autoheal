@@ -28,10 +28,10 @@ This program Autoheal provide an easy way to generate a script combining checkin
 2. Writing conf.yaml as following example:
 
         nginx:                                                                # process 1
-            pname: nginx                                                      # use progess name to check process exists
+            pname: nginx                                                      # use progess name to check process exist
             script: sudo -u admin /home/admin/cai/bin/nginx-proxy -s restart  # restart the process
         web_service:                                                          # process 2
-            pid_file: /home/admin/web_server/conf/.web_server.pid             # use pid file to check process exists
+            pid_file: /home/admin/web_server/conf/.web_server.pid             # use pid file to check process exist
             dep:
                 - name: nginx                                                 # check tcp dependency
                   host: 127.0.0.1
