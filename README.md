@@ -46,6 +46,6 @@ This program Autoheal provide an easy way to generate a script combining checkin
   
 4. Add a cron task to run restart.sh regularly.You can create a file in /etc/cron.d like this
   
-        * * * * * * root sh /home/admin/startup.sh > /dev/null 2>&1
+        * * * * * root sh /home/admin/startup.sh > /dev/null 2>&1
       
     Note about the user privilege to start the process correctly.
