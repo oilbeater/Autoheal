@@ -40,11 +40,11 @@ This program Autoheal provide an easy way to generate a script combining checkin
                   url: http://middleware.host.com/check.htm
             script: sudo -u admin /home/admin/web_server/bin/startup.sh
   
-  3. Generate the restart script:
+3. Generate the restart script:
   
         sh generate.sh >> restart.sh
   
-  4. Add a cron task to run restart.sh regularly.You can create a file in /etc/cron.d like this
+4. Add a cron task to run restart.sh regularly.You can create a file in /etc/cron.d like this
   
         * * * * * * root sh /home/admin/startup.sh > /dev/null 2>&1
       
