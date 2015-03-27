@@ -1,5 +1,5 @@
 # Autoheal
-A simple script that auto restart distribute service from power cut or service crash.
+A simple script that auto restarts distribute service from power cut or service crash.
 
 # Where it come?
 All services will crash after a power cut.When power comes back, services recovery may face these problems:
