@@ -42,7 +42,7 @@ This program Autoheal provide an easy way to generate a script combining checkin
   
 3. Generate the restart script:
   
-        sh generate.sh >> restart.sh
+        sh generate.sh >> startup.sh
   
 4. Add a cron task to run restart.sh regularly.You can create a file in /etc/cron.d like this
   
